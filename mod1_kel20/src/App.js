@@ -11,14 +11,40 @@ handleClick =()=> {
 }
 hitung= () =>{
   // program input
-let marks,marks2,marks3,a,b,c,d,e,f,a1,b1,c1,d1,e1,f1;
-a = prompt('Enter your marks 1 :'); a1 = parseInt(a);
-b = prompt('Enter your marks 2 :'); b1 = parseInt(b);
-c = prompt('Enter your marks 3 :'); c1 = parseInt(c);
+let marks,marks2,marks3,a,b,c,d,e,f,a1,b1,c1,d1,e1,f1,bea1;
+a = prompt('Enter your marks 1 :'); 
+if (a === null) {
+  return;
+}
+a1 = parseInt(a);
+
+b = prompt('Enter your marks 2 :'); 
+if (b === null) {
+  return;
+}
+b1 = parseInt(b);
+
+c = prompt('Enter your marks 3 :'); 
+if (c === null) {
+  return;
+}
+c1 = parseInt(c);
 marks = (a1 + b1 + c1 ) / 3;
-d = prompt('Jumlah Bolos mahasiswa : '); d1 = parseInt(d);
+
+d = prompt('Jumlah Bolos mahasiswa : '); 
+if (d === null) {
+  return;
+}
+d1 = parseInt(d);
+
 marks2 = (14 - d1);
-f = prompt('UKT ke :'); f1 = parseInt(f);
+
+
+f = prompt('Semester Berjalan :'); 
+if (f === null) {
+  return;
+}
+f1 = parseInt(f);
 marks3 = 500000 * f1;
 
 // check the condition
@@ -28,11 +54,20 @@ let result =
   : (marks >= 75 && marks <= 100 ) ? ('A')
   : ('Tidak Ada')
 
+const parambea = [result, f1];
 
+const newArr = parambea.filter(elemen => {
+ if(result === 'B' || result === 'A') {
+  if(f1 >= 4){ bea1 = 'Lolos'
+    
+  }
+  else {bea1 = 'Tidak Lolos'}
+ }
+})
 
 console.log(`You ${result} the exam.`);
 alert(`You ${result} the exam.`);
-document.getElementById("pesan").innerHTML = `You score : ${marks} <br> Passing Grade : ${result} <br> Total Kehadiran : ${marks2} <br> Total Ukt mahasiswa : Rp.${marks3}`; 
+document.getElementById("pesan").innerHTML = `You score : ${marks} <br> Passing Grade : ${result} <br> Lolos Beasiswa : ${bea1} <br> Total Kehadiran : ${marks2} <br> Total Ukt mahasiswa : Rp.${marks3}`; 
 }
   render() {  
     
