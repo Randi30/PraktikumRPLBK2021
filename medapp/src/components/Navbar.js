@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
-import './Navbar.css';
-import '../maicons.css';
+
+import '../Maicons.css';
 import '../theme.css';
 import '../bootstrap.css';
+import '../assets/vendor/animate/animate.css';
+
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -29,14 +31,14 @@ function Navbar() {
 
   return (
     <>
-<div class="topbar">
+    <div className="topbar">
       <div class="container">
         <div class="row">
           <div class="col-sm-8 text-sm">
             <div class="site-info">
               <a href="#"><span class="mai-call text-primary"></span> +621 5687-8898-2415</a>
               <span class="divider">|</span>
-              <a href="#"><span class="mai-mail text-primary"></span> mail@example.com</a>
+              <a href="#"><span class="mai-mail text-primary"></span> mail@MediApp.UnitedHealth.com</a>
             </div>
           </div>
 
@@ -53,58 +55,58 @@ function Navbar() {
     </div> 
 
       <nav className='navbar navbar-expand-lg navbar-light shadow-sm'>
-        <div className='navbar-container'>
-          
-          <a class="navbar-brand" href="#">
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-          <span class="text-primary">One</span>
-          -Health
-          <i class='fab fa-typo3' />
+        <div className='container'>
+        <a className='navbar-brand' href="#">
+          <Link to='/'  onClick={closeMobileMenu}>
+          <span className="text-primary">MEDi</span>-App
+            <i className='fas fa-heartbeat' />
           </Link>
           </a>
-         
 
-          <div className='menu-icon' onClick={handleClick}>
-            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+        <form action="#">
+          <div className="input-group input-navbar">
+            <div className="input-group-prepend">
+              <span className="input-group-text" id="icon-addon1"><span class="mai-search"></span></span>
+            </div>
+            <input type="text" class="form-control" placeholder="Enter keyword.." aria-label="Username" aria-describedby="icon-addon1">
+            </input>
+            </div>
+        </form>
+
+
+          <div className='navbar-toggler' onClick={handleClick}>
+            <i className={click ?  'navbar-toggler-icon' : 'fas fa-times'} />
           </div>
 
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                Home
-              </Link>
+          <div id="navbarSupport" className={click ? 'navbar-collapse collapse': "navbar-collapse collapse show"} >
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item active">
+              <Link  to='/'><a className="nav-link" >Home</a></Link>
+            </li>
+            <li className="nav-item">
+            <Link  to='/'>
+              <a className="nav-link">About Us</a>
+            </Link>
+            </li>
+            <li className="nav-item">
+            <Link  to='/'>
+              <a className="nav-link" >Doctors</a>
+            </Link>
             </li>
             
-            <li className='nav-item'>
-              <Link
-                to='/services'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                Services
-              </Link>
+            <li className="nav-item">
+            <Link  to='/'>
+              <a className="nav-link" >Contact</a>
+            </Link>
             </li>
-            <li className='nav-item'>
-              <Link
-                to='/products'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                Products
-              </Link>
-            </li>
-
-            <li>
-              <Link
-                to='/sign-up'
-                className='nav-links-mobile'
-                onClick={closeMobileMenu}
-              >
-                Sign Up
-              </Link>
+            <li className="nav-item">
+            <Link  to='/'>
+              <a className="btn btn-primary ml-lg-3" href="#">Login / Register</a>
+            </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+        </div>
+
         </div>
       </nav>
     </>

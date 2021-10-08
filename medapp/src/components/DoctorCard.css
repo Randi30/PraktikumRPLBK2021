@@ -1,0 +1,45 @@
+.doc-card{
+    width: 255px;
+    position: relative;
+    min-height: 1px;
+    float: left;
+    -webkit-backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: block;
+    font-family:  "Source Sans Pro", sans-serif;
+    line-height: 1.5;
+    color: #343531;
+}
+
+.card-header {
+
+}
+
+.card-img-container{
+    min-height: 1px;
+    float: left;
+    -webkit-backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: block;
+    font-family:  "Source Sans Pro", sans-serif;
+    line-height: 1.5;
+    color: #343531;
+
+}
+
+.card-image-container-shadow{
+
+}
+
+.card-body{
+
+}
+
+.text-doc {
+    
+}
+
+.field-doc {
+
+}
+
