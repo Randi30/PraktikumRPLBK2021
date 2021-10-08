@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Tekkom from './tekkom'
+/*import Tekkom from './tekkom'*/
+import Lokaldat from './lokaldat';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Tekkom />
+    <Lokaldat />
   </React.StrictMode>,
   document.getElementById('root')
 );
