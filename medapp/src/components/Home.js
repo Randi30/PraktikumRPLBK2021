@@ -13,7 +13,6 @@ function Home() {
     return (
         <>
         <HeroSection />
-        <DoctorCard docname="Tedy" field="Urology"/>
         </>
     )
 }

@@ -1,0 +1,40 @@
+{
+  "list-id": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+
+  "doc": [
+    {
+      "name": "Angela Merkel",
+      "field": "Pulmonology",
+      "gambar": "/img/doctors/doctor_1.jpg"
+    },
+    {
+      "name": "Kujo Jotaro",
+      "field": "Cardiology",
+      "gambar": "/img/doctors/doctor_2.jpg"
+
+
+    },
+    {
+      "name": "Salswigbur",
+      "field": "Pediatry",
+      "gambar": "/img/doctors/doctor_3.jpg"
+
+
+    }
+  ],
+
+  "users": [
+    {
+      "username": "Therads19",
+      "password": "#1999",
+      "tagId": 1
+    }
+  ]
+
+}

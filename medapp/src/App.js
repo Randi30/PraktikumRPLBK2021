@@ -4,10 +4,12 @@ import reactDom from 'react-dom';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
-import Home from './components/Home';
 import './assets/vendor/animate/animate.css';
 import React from 'react';
 import DoctorList from './components/DoctorList';
+import HeroSection from './components/HeroSection';
+
+import Mappoint from './components/Mappoint';
 
 function App() {
   return (
@@ -15,11 +17,9 @@ function App() {
 
 <Router>
 <Navbar/>
-      <Switch>
-        <Route exact path='/' component={Home}/>
-      </Switch>
-      <DoctorList/>
-    </Router>
+<HeroSection />
+<DoctorList/>
+</Router>
     
 
 </>

@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import DoctorCard from './components/DoctorCard';
+import Mappoint from './components/Mappoint'
 
 
 
