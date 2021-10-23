@@ -1,0 +1,239 @@
+body {
+  transition: 1s;
+}
+.sejajar-nav {
+  position: absolute;
+  top: -1.2em;
+  z-index: 1;
+}
+/* Section 1 */
+.container-s1 {
+  overflow-x: hidden;
+  width: 100%;
+  /* background-color: bisque; */
+  height: 92vh;
+  overflow-y: hidden;
+  /*border : 1px solid black;*/
+}
+.padding-s1 {
+  display: flex;
+  padding: 20px;
+  height: 75vh;
+  position: relative;
+  top: 6vh;
+  /*border : 1px solid black;*/
+}
+.s1-post1 {
+  flex: 1;
+  padding: 3em;
+  /*border : 1px solid black;*/
+}
+.s1-boxtext-post1 {
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  top: 6em;
+  margin: auto;
+  /*border : 1px solid black;*/
+}
+.s1-title-camp1 {
+  font-weight: Bold;
+  font-size: 50px;
+  line-height: 60px;
+  line-height: 100%;
+}
+
+.s1-subtitle-camp1 {
+  padding-top: 1em;
+  font-size: 30px !important;
+  line-height: 40px !important;
+}
+
+.buutton {
+  margin: auto;
+  position: relative;
+  top: 11em;
+  left: 13em;
+}
+.lebar {
+  padding: 10px 6em 10px 6em !important;
+}
+
+.s1-post2 {
+  flex: 1;
+  padding: 3em;
+  border-radius: 60px;
+  margin-right: 2em;
+
+  background-image: url(../asset/img/botol1.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Section 1 End */
+.s1-subtitle-camp1,
+.text {
+  font-family: Poppins;
+  font-weight: Light;
+  font-size: 25px;
+  line-height: 50px;
+  line-height: 100%;
+}
+/* Section 2 */
+.container-s2 {
+  height: auto;
+  /*border : 1px solid black;*/
+}
+.container-toggle {
+  display: flex;
+  justify-content: center;
+  /*border : 1px solid black;*/
+}
+.text {
+  /*border : 1px solid black;*/
+  text-align: center;
+  box-sizing: border-box;
+  width: 60%;
+  margin: auto;
+  position: relative;
+  left: 20%;
+
+  font-size: 30px;
+  line-height: 50px;
+  font-weight: 600;
+}
+
+.card-s2 {
+  background-color: rgb(64, 252, 218);
+  /* box-shadow: chocolate; */
+  width: auto;
+  margin: 2em;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.cardbody-s2 {
+  /* background-color: skyblue; */
+  margin: 10px;
+  flex: 1;
+}
+.box {
+  border: 1px solid red;
+  margin: auto;
+}
+/* Section 2 End */
+.button1:hover {
+  border: none;
+  color: #000;
+  box-shadow: none;
+  background-color: rgb(64, 252, 180);
+}
+/* Section 3 */
+.container-s3 {
+  /* background-color: darkorange; */
+}
+.button1 {
+  border: none;
+  box-shadow: 0px 0px 9px 1px #000;
+  background-color: rgb(64, 252, 218);
+  padding: 10px 25px 10px 25px;
+  margin: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #ffff;
+  font-size: 17px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.justify {
+  margin: auto;
+}
+.ctr {
+  position: relative;
+  left: 38%;
+  right: 40%;
+}
+.flexing-s3 {
+  display: flex;
+}
+.vis {
+  visibility: hidden;
+}
+/* Section 3 End */
+/* Section 4 */
+.container-s4 {
+  /* background-color: darkseagreen; */
+  padding: 20px;
+}
+.title1 {
+  text-align: center;
+}
+.container-card-sec4 {
+  /* background-color: darkturquoise; */
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+  grid-auto-columns: 25%;
+
+  margin: 40px 0px 0px 0px;
+  justify-content: center;
+}
+.card-sec4 {
+  /* background-color: forestgreen; */
+  flex: 1;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+  padding: 15px 25px 15px 25px;
+  display: flex;
+}
+.title-card-sec4 {
+  margin-left: 25px;
+}
+
+.name-card {
+}
+.age-card {
+}
+.desc-card {
+  box-sizing: border-box;
+  /* border: 1px solid aquamarine; */
+  max-width: 17vw;
+}
+.image-sec4 {
+  border-radius: 200px;
+}
+/* Section 4 End */
+/* Section 5 */
+.container-sec5 {
+  background-color: burlywood;
+  display: flex;
+  justify-content: space-around;
+}
+
+.rights,
+.left,
+.center {
+  display: flex;
+  margin: 20px;
+}
+.text-sec5,
+.sosmed,
+.center {
+  margin-left: 30px;
+  font-size: 18px;
+  font-weight: 600;
+}
+/* Section 5 End*/
+
+.s1-title-camp1,
+.s1-subtitle-camp1,
+.text,
+.title,
+.title-card-sec4,
+.desc-card {
+  opacity: 0.8;
+}

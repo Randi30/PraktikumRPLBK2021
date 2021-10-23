@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+.ToDo {
+  font-family: sans-serif;
+  text-align: center;
+  /*border: 1px solid black;*/
+  margin: auto;
+  width: 40%;
+  font-family: "Poppins", sans-serif !important;
+}
+.input {
+  /* border: 1px solid blue; */
+  width: 80%;
+  border-radius: 15px;
+  outline: none;
+  text-align: center;
+}
+.list-todo {
+  /*border: 1px solid black;*/
+  font-size: 40px !important;
+}

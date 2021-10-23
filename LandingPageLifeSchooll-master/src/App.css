@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+.font-fams {
+  font-family: "Poppins", sans-serif !important;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navv {
+  margin: 0px;
+  padding-top: 20px;
+  padding: 10px;
+  border: solid #fcddbc;
+  background-color: #fcddbc;
+}
+.nav-title {
+  font-size: 20px;
+  font-weight: Bold;
+  line-height: 45px;
+  transition: 1.5s;
+}
+.nav-title:hover {
+  opacity: 0;
+  color: aquamarine;
+}
+.title {
+  margin-left: 3em;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 30px;
+}
+.content {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.text {
+  box-sizing: border-box;
+  padding: 5px 15px 5px 15px;
+  margin: 10px;
+}
+
+.button {
+  background-color: #61dafb;
+  outline: none;
+  padding: 10px 20px 10px 20px;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border-radius: 9px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+.button:active {
+  background-color: #ffff;
+}
+.button:hover {
+  padding: 7px 17px 7px 17px;
+  transition: 0.1s;
+}
+.right {
+  float: right;
+  position: relative;
+  bottom: 2.5em;
+  margin-right: 5em;
+}
+.margin-2em {
+  margin-right: 2em;
+}
+.conta-card {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  justify-content: space-around;
+  margin-top: 1.5em;
+  width: 100%;
+}
+.card-margin {
+  margin: 10px;
+  font-family: poppins;
+}
+.box-card {
+  padding: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #f5f5f5f2;
+  border-radius: 15px;
+  min-height: 90%;
+}
+.title-card {
+  box-sizing: border-box;
+  margin-top: 0.5em;
+  text-align: center;
+  font-weight: bold;
+}
